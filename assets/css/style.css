@@ -43,6 +43,10 @@ body {
     text-shadow: 1px 1px 5px #00000031;
 }
 
+.big {
+    padding: 2rem .8rem !important;
+}
+
 .span-btn {
     font-size: 1.4rem !important;
     font-weight: normal !important;
@@ -62,12 +66,21 @@ header {
 }
 
 /* main */
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+}
+
 .main-left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
     gap: 2rem;
+    padding: 1.6rem;
 }
 
 .main-logo {
@@ -87,7 +100,10 @@ header {
 }
 
 .main-title,
-.main-subtitle {
+.main-subtitle,
+.main-rs-title,
+.main-anvisa-title,
+.footer-title {
     font-size: 3rem;
     font-weight: bold;
     color: var(--default);
@@ -106,6 +122,141 @@ header {
     font-size: 2rem;
 }
 
+.logo-garantia {
+    max-width: 20rem;
+    padding-top: 2rem;
+}
+.garantia-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--default);
+}
+.garantia-span {
+    color: var(--light-blue);
+}
+
+/* main right side */
+.main-right-side {
+    background-image: linear-gradient(to bottom, #ffffff, #e6efff, #bce3ff, #83daf3, #3fd0d8);
+}
+.main-rs-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.flex-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    gap: 1.6rem;
+}
+
+.check-img {
+    width: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--default);
+}
+
+.card-description {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+/* anvisa */
+.flex-anvisa {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2rem 0;
+}
+
+.main-anvisa-title {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.anvisa-banner {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.anvisa-logo {
+    max-width: 14rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.anvisa-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.anvisa-paragraph {
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+.anvisa-span {
+    color: var(--white);
+}
+
+/* footer */
+footer {
+    background-color: #ddf9fb;
+    padding: 2rem;
+
+}
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1.6rem;
+    max-width: 144rem;
+}
+
+.footer-logo {
+    width: 80%;
+}
+.footer-title {
+    text-transform: none;
+    font-size: 2rem;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.footer-ancor {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--default);
+}
+.footer-payments {
+    max-width: 24.1rem
+}
 /* animation */
 @-webkit-keyframes pulsate-fwd {
     0% {
