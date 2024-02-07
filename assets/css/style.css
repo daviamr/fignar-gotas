@@ -26,12 +26,21 @@ body {
     width: 100%;
     margin-top: 1.6rem;
     font-size: 1.8rem;
+    font-weight: bold;
     text-transform: uppercase;
     border-radius: 1rem;
     outline: none;
     border: none;
     padding: .8rem 0;
+    background-image: linear-gradient(180deg, #02EA21 0%, #00710F 100%);
+    -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
 
+.default-btn a {
+    color: var(--white);
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #00000031;
 }
 
 .span-btn {
@@ -92,7 +101,37 @@ header {
 }
 
 .main-description {
-    margin-top: 1.6rem;
+    margin-top: 1.8rem;
     text-align: normal;
     font-size: 2rem;
 }
+
+/* animation */
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.08);
+              transform: scale(1.08);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.08);
+              transform: scale(1.08);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
