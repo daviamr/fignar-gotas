@@ -1,3 +1,117 @@
-@media (min-width: 425px) {
+@media (min-width: 768px) {
+    .h-title {
+        font-size: 3rem;
+    }
+    .grid-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 4rem;
+    }
     
+    .flex-main {
+        align-items: center;
+        gap: 8rem;
+    }
+
+    .main-logo,
+    .footer-logo {
+        width: 40%;
+    }
+    .main-fignar-gotas {
+        width: 40%;
+    }
+    .main-subtitle {
+        padding-bottom: 2rem;
+    }
+
+    .main-left-side,
+    .flex-anvisa {
+        padding: 6rem 4rem;
+    }
+    .main-rs-title {
+        font-size: 3rem;
+        padding: 0 4rem;
+    }
+
+    .footer-box {
+        align-items: center;
+    }
+    .anvisa-banner {
+        max-width: 68rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1024px) {
+    body {
+        background-image: linear-gradient(to bottom, #ffffff, #e6efff, #bce3ff, #83daf3, #3fd0d8);
+    }
+    .flex-main {
+        gap: 2rem;
+    }
+    .main-left-side {
+        gap: 4rem;
+    }
+    .main-text-wrapper {
+        gap: 0;
+    }
+    .main-right-side {
+        background-image: none;
+    }
+    .main-logo {
+        width: 40%;
+    }
+    .main-fignar-gotas {
+        width: 50%;
+    }
+    .garantia-title {
+        max-width: 40rem;
+        margin: 1.6rem auto 0 auto;
+    }
+
+    .main-subtitle {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .main-description {
+        max-width: 57rem;
+        margin: 2rem auto;
+    }
+    .main-rs-title {
+        max-width: 60rem;
+        margin: 0 auto;
+        padding-bottom: 2.4rem;
+    }
+    .grid-card {
+        grid-template-columns: repeat(1, max-content);
+        justify-content: center;
+    }
+
+    .flex-anvisa {
+        gap: 2.4rem;
+    }
+
+    .anvisa-paragraph {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .main-anvisa-title {
+        max-width: 57rem;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 4rem;
+    }
+    .footer-box {
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 6rem;
+    }
+    .footer-logo {
+        width: 20%;
+    }
+    .footer-title {
+        margin-bottom: 1.6rem;
+    }
 }

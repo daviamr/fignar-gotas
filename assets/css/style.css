@@ -24,6 +24,7 @@ body {
 
 .default-btn {
     width: 100%;
+    max-width: 40rem;
     margin-top: 1.6rem;
     font-size: 1.8rem;
     font-weight: bold;
@@ -58,6 +59,15 @@ header {
     background-color: var(--default);
 }
 
+.h-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
+
 .h-title {
     text-align: center;
     font-size: 2.4rem;
@@ -70,6 +80,8 @@ header {
 .flex-main {
     display: flex;
     flex-direction: column;
+    max-width: 144rem;
+    margin: 0 auto;
     gap: 3.2rem;
 
 }
@@ -147,9 +159,10 @@ header {
     padding: 0 2rem;
 }
 
-.flex-card {
-    display: flex;
-    flex-direction: column;
+.grid-card {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
     padding: 0 2rem 2rem 2rem;
     gap: 1.6rem;
 }
@@ -167,6 +180,8 @@ header {
     border-radius: 1rem;
     background-color: var(--white);
     padding: 2rem;
+    /* height: 35rem; */
+    max-width: 40rem;
 }
 
 .card-title {
@@ -187,7 +202,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 .main-anvisa-title {
@@ -218,7 +233,7 @@ header {
     line-height: 2.4rem;
 }
 .anvisa-span {
-    color: var(--white);
+    color: var(--default);
 }
 
 /* footer */
